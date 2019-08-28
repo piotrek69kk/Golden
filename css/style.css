@@ -329,5 +329,8 @@ section {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
+  .hid {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
