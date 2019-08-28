@@ -27,13 +27,18 @@ h2 {
     font-family: 'Merriweather', serif;
     letter-spacing: -1px;
 }
-.container {
+.container-normal {
     display: flex;
     flex-wrap: wrap;
     max-width: 1140px;  
     width: 100%;
     height: 100%;
     position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
 }
 .row {
     display: flex;
@@ -55,6 +60,7 @@ h2 {
 }
 .menubox {
     word-spacing: 30px;
+    padding: 15px;
     a {
         text-decoration-line: none;
         color: #ffffff;
@@ -74,11 +80,15 @@ a:hover {
     left: 60px;
     top: 26px;
 }
-.col-header2 {
+.col-header-2 {
     flex: 70%;
     text-align: right;
     margin: auto;
     padding-left: 15%;
+}
+button {
+    margin: 0 auto;
+    text-align: center;
 }
 .btn-tellmemore {
     background: #fed136;
@@ -92,8 +102,9 @@ a:hover {
     font-weight: bold;
     color: #ffffff;
     position: relative;
-    margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
+
+    
 }
 .btn-tellmemore:hover {
     background: #b3d8f1; 
@@ -103,7 +114,6 @@ a:hover {
     text-align: center;
     align-items: center;
     width: 100%;
-    margin: 0 auto;
     height: 100px;
 }
 .col100nice {
@@ -119,8 +129,9 @@ a:hover {
     flex-wrap: nowrap;
     word-spacing: 30px;
     align-items: center;
-    margin: 0 auto;
     line-height: 45px;
+    width: 100%;
+    justify-content: flex-end;
 }
 .title-p {
     font-size: 40px;
@@ -145,7 +156,6 @@ a:hover {
 section {
     padding-top: 120px;
     padding-bottom: 150px;
-    padding-left: 25px;
 }
 .boximg i {
     width: 70px;
@@ -157,7 +167,7 @@ section {
     font-size: 40px;
     text-align: center;
     line-height: 65px;
-    justify-content: center;
+    justify-content: space-between;
 }
 .centering {
     text-align: center;
@@ -174,18 +184,23 @@ section {
     max-width: 291px;
     margin-bottom: 18px;
     text-align: center;
+    width: 100%;
     img {
         object-fit: cover;
     }
 }
 .bottomline {
     padding-top: 10px;
-    height: 58px;
     display: flex;
     flex-wrap: wrap;
     font-family: 'Montserrat', sans-serif;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    text-align: center;
+    ul {
+        padding-left: 0px;
+    }
     li {
         display: inline-block;
         position: relative;
@@ -204,57 +219,52 @@ section {
     text-align: center;
     vertical-align: middle;
     line-height: 38px;
-}
-}
-footer .row {
-        justify-content: center;
-        align-items: center;
     }
+}
 /* Media */
 @media (min-width: 767px) and (max-width: 895px) {
-    h1 {
+h1 {
         font-size: 60px;  }
 }
 @media (max-width: 767px) {
-    .menu {
+.menu {
         flex-direction: column;
+}
+section {
+    padding-top: 60px;
+    padding-bottom: 75px;
+}
+h1 {
+    font-size: 45px;
+}
+h2 {
+    font-size: 25px;
+}
+.btn-tellmemore {
+    width: 180px;
+    height: 50px;
+    font-size: 18px;
+}
+.title-p {
+    font-size: 32px;
+}
+.subtitle {
+    font-size: 14px;
+}
+.boximg {
+    justify-content: center;
+}
+.services .boximg {
+    flex: 100%;
+}
+.menubox {
+    a {
+        font-size: 24px;
+        line-height: 32px;
     }
-    section {
-        padding-top: 60px;
-        padding-bottom: 75px;
-    }
-    h1 {
-        font-size: 45px;
-    }
-    h2 {
-        font-size: 25px;}
-    .btn-tellmemore {
-        width: 180px;
-        height: 50px;
-        font-size: 18px;
-    }
-    .title-p {
-        font-size: 32px;
-    }
-    .subtitle {
-        font-size: 14px;
-    }
-    .services .boximg {
-        flex: 100%;
-        max-width: 60%;
-    }
-    .menubox {
-        a {
-            font-size: 24px;
-            line-height: 32px;
-        }
-    }
-    .bottomline .boximg {
-        flex: 100%;
-        max-width: 60%;
-    }
-    footer .row {
-        flex-direction: column;
-        flex-wrap: nowrap;
+}
+footer .row {
+    flex-direction: column;
+    flex-wrap: nowrap;
     }
 }
